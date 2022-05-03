@@ -5,7 +5,8 @@
 }
 
 :root{
-	--bg-color: #131313;
+	--bg-color: #121212FF;
+	--bg-null: #12121200;
 	--white: #ffffff;
 }
 
