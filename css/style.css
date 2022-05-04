@@ -86,7 +86,7 @@ body{
 	margin-right: 2%; 
 	height: 100%;
 	flex-basis: 50%;
-	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 95%),
+	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 98%),
 				url('../assets/images/franklin.png') no-repeat;
 	background-size: cover;
 }
