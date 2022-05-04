@@ -80,6 +80,8 @@ body{
 	padding: 10px 20px;
 	border: 1px solid white;
 	margin: 0 10px;
+	text-decoration: none;
+	color: var(--white);
 }
 
 .info .bg-img{
@@ -100,8 +102,33 @@ body{
 	margin: 0 2%;
 }
 
+.head-footer i{
+	font-size: 1.7rem;
+}
+
 .head-footer .scroll-icon a{
+	text-decoration: none;
+	color: var(--white);
 	padding: 10px 8px 6px 8px;
 	border: 1px solid white;
 	border-radius: 10px;
+}
+
+.scroll-icon i{
+	font-size: 0.9rem !important;  
+}
+
+.mail a{
+	text-decoration: none;
+	color: var(--white);
+}
+
+.icon-fb-git-lkd a{
+	color: var(--white);
+	text-decoration: none; 
+	margin: 0 10px;
+}
+
+.icon-fb-git-lkd .lk{
+	margin-right: 0px !important;
 }
