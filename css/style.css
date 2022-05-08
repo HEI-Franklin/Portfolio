@@ -1,8 +1,74 @@
-body{
-	background-color: var(--bg-color); 
+nav{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+	position: fixed; 
+	margin-top: 5vh;
+	z-index: 100;   
 }
 
-#header{
+.logo{
+	margin-left: 5vw;   
+}
+
+.logo img{
+	width: 140px;
+	height: auto;
+}
+
+.menu{
+	color: var(--white);
+	margin-right: 5vw; 
+	font-size: 2.5rem; 
+	font-weight: bold;
+}
+
+
+/*----------------------------------------*/
+
+
+#home{
+	position: relative;
+}
+
+
+.home_wrapper{ 
+	position: absolute;
+	top: calc(5vh + 50px);
+	width: 100%;
+	height: calc(100vh - (5vh + 50px));
+}
+
+.info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: calc(100vh - (6vh + 100px));
+}
+
+.info .about{
+	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	margin-left: 5%;
+}
+
+.info .bg-img{
+	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	object-fit: ;
+	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 98%),
+				url('../assets/images/franklin.png') no-repeat;
+	background-size: cover;
+}
+
+
+/* #header{
 	width: 100%;
 	height: 60px;
 	display: flex;
@@ -23,8 +89,6 @@ body{
 #header .menu{
 	margin-right: 2%;
 }
-
-/*------------------------------*/
 
 #main{
 	width: 100%;
@@ -131,4 +195,4 @@ body{
 
 .icon-fb-git-lkd .lk{
 	margin-right: 0px !important;
-}
+} */
