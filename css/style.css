@@ -27,7 +27,7 @@ nav{
 }
 
 
-/*----------------------------------------*/
+/*-------------------section 1---------------------*/
 
 
 #home{
@@ -55,80 +55,22 @@ nav{
 	width: 100%;
 	height: 100%;
 	margin-left: 5%;
-}
-
-.info .bg-img{
-	flex-basis: 50%;
-	width: 100%;
-	height: 100%;
-	object-fit: ;
-	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 98%),
-				url('../assets/images/franklin.png') no-repeat;
-	background-size: cover;
-}
-
-
-/* #header{
-	width: 100%;
-	height: 60px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between; 
-	align-items: center;
-	margin-top: 40px;
-}
-
-#header .logo, #header .menu{
-	color: var(--white);
-}
-
-#header .logo{
-	margin-left: 2%;
-}
-
-#header .menu{
-	margin-right: 2%;
-}
-
-#main{
-	width: 100%;
-	height: calc(100vh - 120px);
-	margin-top: 20px;
-}
-
-#main .wrapper{
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	height: 100%;
-}
-
-#main .info{
-	width: 100%;
-	flex-basis: 90%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
+	justify-content: center; 
 	color: var(--white);
-}
-
-#main .about{
-	margin: 0 2%;
-	flex-basis: 50%;
-}
-
-.about .name, .about .job, .about .motivation{
-	margin: 20px 0;
 }
 
 .about .name{
 	font-size: 20px; 
 	letter-spacing: 3px;
+	margin: 20px 0;
 }
 
 .about .job{
 	font-weight: 800; 
 	font-size: 2vw;
+	margin-bottom: 20px;
 }
 
 .about .motivation{
@@ -142,39 +84,42 @@ nav{
 
 .links a{
 	padding: 10px 20px;
-	border: 1px solid white;
+	border: 1px solid var(--white);
 	margin: 0 10px;
 	text-decoration: none;
 	color: var(--white);
 }
 
 .info .bg-img{
-	margin-right: 2%; 
-	height: 100%;
 	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	margin-right: 5%; 
 	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 98%),
 				url('../assets/images/franklin.png') no-repeat;
 	background-size: cover;
 }
 
-#main .head-footer{
-	flex-basis: 10%;
+.head-footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between; 
-	align-items: center;
-	margin: 0 2%;
+	align-items: flex-end;
+	margin: 0 5%;
 }
 
 .head-footer i{
 	font-size: 1.7rem;
 }
 
-.head-footer .scroll-icon a{
-	text-decoration: none;
-	color: var(--white);
+.head-footer i:hover{
+	transform: scale(1.2);
+}
+
+.head-footer .scroll-icon span{
+	color: var(--light);
 	padding: 10px 8px 6px 8px;
-	border: 1px solid white;
+	border: 1px solid var(--light);
 	border-radius: 10px;
 }
 
@@ -195,4 +140,54 @@ nav{
 
 .icon-fb-git-lkd .lk{
 	margin-right: 0px !important;
-} */
+}
+
+
+/*-------------------section 2---------------------*/
+
+
+#xp{
+	position: relative;
+}
+
+.xp_wrapper{ 
+	position: absolute;
+	top: calc(5vh + 50px);
+	width: 100%;
+	height: calc(100vh - (5vh + 50px));
+/* 	background-color: yellow;  */
+}
+
+.xp_inner{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+	height: calc(100vh - (6vh + 100px));
+}
+
+.xp_inner .school{
+	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	margin-left: 5%;
+	color: var(--white);
+/* 	background-color: red;  */
+}
+
+.xp_inner .xp_pro{
+	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	margin-right: 5%;
+	color: var(--white);
+/* 	background-color: green; */
+}
+
+.xp_links{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: flex-end;
+	margin: 0 5%;
+}

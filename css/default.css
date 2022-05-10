@@ -8,8 +8,13 @@
 	--bg-color: #121212FF;
 	--bg-null: #12121200;
 	--white: #ffffff;
+	--light: #ffffff66;
 }
 
 body{
 	background-color: #121212;
+}
+
+.section h1{
+	color: var(--white);
 }

@@ -5,6 +5,7 @@ class PageScroll{
         this.opts = opts
         this.$up = null
         this.$down = null
+
         this.level = 0
         this.bound = this.$sections.length
         this.isAnimating = false
@@ -44,16 +45,20 @@ class PageScroll{
         this.#renderNav()
         this.$up = document.querySelector('#control-up')
         this.$down = document.querySelector('#control-down')
+
         this.$sections.forEach(elem => elem.style.transition = `transform ${+this.opts.animDuration/1000 + 's' || '0.3s'}`)
         this.$sections.forEach(elem => elem.style.transitionTimingFunction = this.opts.easing ? this.opts.easing : 'linear')
         this.moveup = this.moveup.bind(this)
         this.movedown = this.movedown.bind(this)
+
         this.$up.addEventListener('click', this.moveup)
         this.$down.addEventListener('click', this.movedown)
+
         this.$root.addEventListener('wheel', (event)=> {
             if(event.deltaY > 0) this.movedown()
             else this.moveup()
         })
+
         if(this.opts.nav){
             for(let i = 0; i < this.opts.nav.length; i++){
                 this.opts.nav[i].addEventListener('click', () => {
