@@ -95,7 +95,7 @@ nav{
 	width: 100%;
 	height: 100%;
 	margin-right: 5%; 
-	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 98%),
+	background: linear-gradient(180deg, var(--bg-null), var(--bg-color) 150%),
 				url('../assets/images/franklin.png') no-repeat;
 	background-size: cover;
 }
